@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body >
+
+   <!--sidebar-->
+  <div class=" fixed left-0 top-0 h-full w-64 p-4 bg-blue-600 rounded-md hidden md:block">
+
+                      <!--sidebar-top-->
+
+    <a href="" class="flex items-center text-white m-2 p-2 pb-4 border-b border-gray-300">
+      <i class="ri-home-2-line text-xl w-6 h-6"></i>
+      <span class="text-lg font-bold ml-3 ">SHE'S CORNER</span>
+   </a>
+                  <!--sidebar-list-of-links-->
+      <ul class="mt-4">
+
+        <li class="mb-2">
+          <a href="" class="flex items-center gap-2 p-2 m-2 text-white hover:bg-blue-400 rounded-md">
+            <i class="ri-home-3-line mr-3 text-lg"></i>
+            <span class="text-sm">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href=""class="flex items-center gap-5 p-2 m-2 text-white hover:bg-blue-400 rounded-md">
+            <i class="ri-shopping-cart-line text-lg"></i>
+            <span class="text-sm">Orders</span>
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href="" class="flex items-center gap-5 p-2 m-2 text-white hover:bg-blue-400 rounded-md">
+            <i class="ri-handbag-line text-lg"></i>
+            <span class="text-sm">Products</span>
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href="" class="flex items-center gap-5 p-2 m-2 text-white hover:bg-blue-400 rounded-md">
+            <i class="ri-user-3-fill text-lg"></i>
+            <span class="text-sm">Customers</span>
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href="" class="flex items-center gap-5 p-2 m-2 text-white hover:bg-blue-400 rounded-md">
+            <i class="ri-file-chart-line text-lg"></i>
+            <span class="text-sm">Reports</span>
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href="" class="flex items-center gap-5 p-2 m-2 text-white hover:bg-blue-400 rounded-md">
+            <i class="ri-settings-2-line text-lg"></i> <span class="text-sm">Settings</span>
+          </a>
+        </li>
+     </ul>
+</div>
+        <!--main-content-->
+ <main class="w-full md:w-[calc(100%-256px)] min-h-screen ml-0 md:ml-64 bg-gray-200">
+                        <!--navbar-->
+ <nav class=" flex justify-between items-center p-2 bg-white rounded-md top-0 shadow-md shadow-gray-300">
+                        <!--navbar left-->
+<h1 class="text-base font-semibold text-black">Store Manager</h1>
+                        <!--navbar right-->
+<div>
+    <ul class="flex items-center mt-3 gap-1 mr-1">
+        <li><i class="ri-search-fill text-gray-500"></i></li>
+        <li><input type="text" placeholder="Search..." class="w-44 pl-10 pr-3 py-1 text-sm bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-black"/></li>
+        <li><i class="ri-shopping-cart-fill text-gray-500"></i></li>
+        <li><i class="ri-notification-3-fill text-gray-500"></i></li>
+        <li><button>
+            <img src="profile 1.jpeg" alt="" class="w-8 h-10  rounded-full hidden md:block">
+        </button></li>
+    </ul>
+  </div>  
+ </nav>
+<!--Page Header-->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center p-4 gap-4">
+    <!--Page Header-left-->
+    <div>
+        <h1 class="text-xl md:text-2xl font-bold text-gray-900">Admin Dashboard</h1>
+        <p class="text-sm text-gray-500">Manage your store effectively</p>
+    </div>
+      <!--Page Header-right-->
+    <div class="flex flex-row items-center justify-start gap-3 w-full md:w-auto">
+        
+        <button class="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md hover:bg-blue-600 flex items-center gap-2 w-fit">
+            <span class="text-lg font-bold">+</span>
+            <span>Add Product</span>
+        </button>
+
+        <button class="bg-white text-gray-700 px-4 py-2 rounded-lg text-sm font-medium shadow-md border border-gray-200 hover:bg-gray-50 flex items-center gap-2 w-fit">
+            <i class="ri-file-text-line"></i>
+            <span>Report</span>
+        </button>
+        
+    </div>
+</div>
+    <!--Overview Cards-->
+<div class="flex flex-wrap gap-4 p-2 m-1 justify-center">
+                    <!--Cards-1-->
+      <div class="w-full md:w-[48%] lg:flex-1 bg-white px-4 py-4 rounded-xl shadow-sm">
+          <div class="flex items-center gap-3">
+            <img class=" w-8 m-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADTUlEQVR4nO2YzWsTQRTAI4ooRaGoVVs8KIIf4B/gxd4E8aJgMM1MUvQiehC0aJJ9U1d6VMSbQqEIIiLq0Yt4EA8eFARRVGg9tJ5qBVE0zb4X25GZJCVJNyGdzWy3HwPvkH2zb99v3sfMJBZbHStwnMnJbRxohAFNMMA8FySNBRA54FvmFI+HCtHvyh0M6HMg50Uj8U6EApF28j0caNQOBEku8M0ygCDJBHpLOJ2oOiKzywCC7IG0JZ1AdSW6mnDz3Uq4oIx+1mB+NCGElky9bQ0TBkg704k5cqeffeup1e6aSLj5bt9o2wSx1GIz9d9hQFlrqWVtnwBd2JnWij1gRMJtsdREAoBEB4LMQaIFQWYgQWqCCfrKBd7ignJc0EMG+L3syKukUzzGBP4NBSRtDIGzDOhaPC7XVtuLX5Ib2SBd4AOyQ/3mAm9bB0kH6U6AQxU7fTlvPwO6zIR3qhqMAZ1TDlkFSQdKJ5zqd+UG7axAzgGLVbrXyazsLEWDhq3WSDrwPoHP51Zd4NT8aNETpUsJ74DxNwD/WIbQjn6o2OMCf/mtJndlVym9zO7xDGjCAgROz4cp7NYgQCN+75yG6V1xV65vdkznzWW4IQQDGjOAmEy6hT2qndauGN4tpZa3z8fZd7GYXJMapF7DiI/2uXJro81uzNDoeWUjKTBZl8NFVQPlOrlZAynoo3KEAd0zgUj4nJLLBUmPzcKL/85ekZvU6nJB4/PyWOALDZmVnVzgzzr9JyaQFgqRdvI9DWvDvyBbknH9vlvY22hOEuhIqVbwhuE3ZEsQJRD6YmYcf1RSs9EcJuiBmpMapMNWIdRIAcZNd1iW8w4qG1zgswbp91LrB2SHVYjK4A5dNIFhgu7PNQx9QPRvBqodW4cIAsOA3ve6cp1+35VdTNBTBjjDAAsMyFGNQOsAh0KBMIPByUo/Z67cXLGhu1T5dKt1UDy6oA4FASFMYBjgdeZ4J9VRgwm8kxR4qGInlZVblL760BgahCHMTK0z+JsL+rbgmoM2Q7TnvhBSYUcKxjZEKDBhQViFCRvCCsxiQbQVZrEh2gITFYhAMFGDMIKJKsSCYKIO0RLMUoFoCrPUIGpvmurarP8DeJTIye1zytWxgsZ/eBExhUDFTjIAAAAASUVORK5CYII=" alt="price-tag-usd--v1">
+               <div class=" flex-col">
+                  <h1 class=" text-sm  text-gray-400 font-bold">TOTAL ORDERS</h1>
+                  <p class="font-bold text-lg">1,550</p>
+                </div>
+          </div>
+      </div>
+           <!--Cards-2-->
+  <div class="w-full md:w-[48%] lg:flex-1 bg-white px-4 py-4 rounded-xl shadow-sm">
+     <div class="flex items-center gap-3 ">
+      <img  class=" w-8 m-2 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaElEQVR4nO2Ya0oDMRCAc0OrKIVm9iLNnM6l1/BHBRW8QCZbUCIWi+SdrM2680Fg2cdMv0y6SVYIhmGyADQftomlA2sRkUgHiTTG4lzrvhyRERQ9+q5f+771Da3FACzSGcAinQGdisi9vpWKXkHRu0R9/ycigHoDyjx/NdQbUclO0RYUTeffZmVmn9kdSSd7rlk8tI3eWoh4Z1h30rBMdjxF04D6rlrEx6DowSnx04sniQR18egEimRSgBIRX8+5zoWGWSxeyrPFIqGes28X17VQZYbaSpSIpCTNkRlaSeSI5CRNkWkqkSpSkjQk01wiRaTmj9j6pVAs0qLn3JVpWImYSG4lQjN24cR5qN6zlwyn2B67YCkzVu3Zd3t9M8sYvlxcojm2WFwGRb4TNZeYHfgtgvSyOAnv0EJzlGie7LFYCtDpDjEbFukNWIuI5K/xbvhrfAwW6Q1gkc6A/yYCnTexGhGGYcQln3LI2afI2ZFCAAAAAElFTkSuQmCC" alt="graph">
+                  <div class=" flex-col">
+                      <h1 class=" text-sm  text-gray-400 font-bold">TOTAL REVENUE</h1>
+                      <p class="font-bold text-lg">12,000$</p>
+                </div>
+          </div>
+  </div>
+            <!--Cards-3-->
+      <div class="w-full md:w-[48%] lg:flex-1 bg-white px-4 py-4 rounded-xl shadow-sm">
+          <div class="flex items-center gap-3">
+            <img class="w-8 m-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEx0lEQVR4nO1Za2hcVRC+FpT6FnxWEMHWH0Zpds/ZjaEiEbSCgogKglgoiK+iIiiCfyS2QlVU0DY1nbnbBtsfQqXUP7WIrzZWaEGrGK0PpNRH1TTJzuxm46Nt9sqce2+zmL3nbO5uYoQdOH9yZ8/Md76ZOXMmnteWtrSlLWlFQ3CqQrpDI/sa+FOFNKqB/tbAi73/hQTBKRrofg18RCMH0xdt6BkIFnrzWXoGgoUaeHt9ADULqKqAD2jke7x5yQTyDieI6Qyt9uaTKOR7Zw7CAJnUPi+fW297gwXZjXSjAi4o4M818i9Lt/x2pvxdAx1MB4QDhbxbtu/oGz5LCoNG/lEjTygsdbccQ64wdo0C2v8vB96Tb9rnrrQg4pzJbR67TPZSQN9O/Z0HNfBD+b7KJS0BYRwFrtRxoM8Y9/nBpoAgB9mNxduMLeRtdb5zDuiupkB0DtB5Gmm4/knyM9EpPtcsEI38WLTXuoTw+yPrl69KzwbSakuiPm+MIz3VKiAa+dXkEGRIDUQBD1k23iw6Wb+0olkgCvnuyN4biTrAP6dvM4BOWJL0oOgtfX38Iquec9FktlC8PGLkC4u9avcrP52ett2oWpwoik50kl81AWTflD2eXlRqlin36Vjhw8nhQG8aHZ+XN50jPndFjLxvsTeaCkQIhPosVJvyq4EfbRZI1qc7I2bfSrbHA+mBIO2zOLBDdHLANzULJLeJr4iAHEhkBPij1EAUcNkS28Md24LTZGmkb9KCiDuEa/3xixXScYu9X5tghPfYnaAH4sqlkT+bMRDgD+TSjdhfa7UFtDM9I1jqlvptobucg9KytDe8Qn5EfpuD0i0a6ZgF8OE8UiY1kOik1tgdoneNMwXKzggE0Im4WXSyCfSs16xk+oudjvA6LqEVOfThDMJqe7h/6UqXbqa/2Om1QiQ+HaysET1p7MygwQmCjsaDiKRGUU+F79teq0TeBA7nJjL95Q7R1cgvNcDIy2ZfpIyZrlhBVxa1DIi0Bm7n6AnRVUjrG8iPdQY00JMu3XyrHlahwcqiBmJ+ldGVWZabET/cl1e5dHMFyrYEhHScCmmLI+arUkJD52hrAzmy9WTZtTemgRSQ+K5JPafKAd2ngA85wuQ7jcXbT4J26EcJfCge1IUTSfreYeN3BcXH8+tL5zcMQFqF8GWY8MQN82FSIb1jWOgNFkzd7rSrgbCKnduZ2VS+0BiVSYxfulX2NCOiZLt/mXc98M2OEOJejTxucYCl4mR9XhL/TsORM8JYp5FGQdSE2FGN/HDtgynr8xKxEdmyHcR+7Zevq8eCpdOlY6YaQfmCKQC8WAG/0NC94WIHaVQhv1g75BZbYQVMbl2kO5DhYE1ppa8t8TwU3xEiOSj2hCFkC4GUCyTxaZfYiO3lcexqu3/0p3QHcrJPJ2/MgzIBrGklrN1wK5dC3h2H8LLCyNkKaK8lYjZ40fiz3scful4bPSekubjS9Z6elQVcEduRD+cmVUSZUHpJDiosXh8mX2lFA7V+FsFQVXwwYHy6IUFvQm7ij+t82GNAFEYudVSxuQkz4LL4EhWZwemHTp9Y7xTXq21uF62134BWIPzlfw+AY1aG0gNp5F9pcwaE9qYG0pa2tKUtbfFmSf4BA9LS16a4caUAAAAASUVORK5CYII=" alt="conference-call">
+              
+                  <div class=" flex-col">
+                    <h1 class=" text-sm  text-gray-400 font-bold">NEW CUSTOMERS</h1>
+                    <p class="font-bold text-lg">85</p>
+                  </div>
+          </div>
+      </div>
+              <!--Cards-4-->  
+  <div class="w-full md:w-[48%] lg:flex-1 bg-white px-4 py-4 rounded-xl shadow-sm">
+          <div class="flex items-center gap-3">
+            <img class="w-8 m-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADhklEQVR4nO2ZSWgUURCGn+ICbhH1oCCCGFBzUOfVJLgcxOWiB6MGz17c9Sp6izdBRIkGTL0JRMST3r1oIrgfXE6aGIKQBNGQ0FUzBgRRW2q6J8ZkepvuSVT6h4Iwqa7q71W9pbuVSpUqVapUqWKo7o49B5CvaqTPYNiuvtGQNnyltsWeq5KURro2NQCT7HKiIGDYmh4QGkoaxJ4uS0HKKUpibfi+NnQUsLBuw61P88Xkb53jY4Dc+Q+AUG8Wre2BsZB2gKG+vxXk8eYcLwkbr/56fqlGehIFxL8L6BMg3QbkNTFAqNcLwm9UBSZMZSIMpg2Gv2Qxv6ciEL92CmoPbWhnHBBV+h9aqzTy3WJ1kL5CrrAtKsgDT/oQIK5PV1yQoprtmRq53YHhQcDCMjVRnomQjkxyLnOdrw/y8URAlFLbm+1ZgPzInTf3lG3PCAWSbc+vjQ9SWJcUiKjBjKwEQ8MuzFk1Xl5JtrYPL1Qe2nSjUBcGRGIkCSKCXH4vIP0EQ98ybfktFYMAWocBedTxo7dqikFEgHzJ9esfW1XDthbgx3mA3PF7DnGH7OzKR5lcYX11QOzZYOiZ63vTF0SOHX9ezIdcgFGpil+icTd4ohogogZDq4vLsaEfgKR9Vi3uVBMESBdkfqiQ0sgPqwUikgdC1z/nv6si7VAVKou82zd2AEgWrX1BOTJtnHXnal/QEaVPjhtRIWTD0sgf4oBABNNI3wODyAEwCoxAjJuIUwICEiucI/Vl2mhXmHYKU4lpBOGSdcmxQ5bVutahBWLFzRH5eNDE/ttA7CQtBTEpCP9PIPQWjNUoB8HiYRBpPxjqrgaIRh7IIjWVcmlDBzRST3wQpHeAVs3kPcOqiQNTDkQjD5R7TyC/FZ8OPUGQPwYntRq99g4ZrSRBskhNXrnGDq6TrV+BoYtBCf0eshpaRhYlCbK1klzI553PCgLjUxm/4E57TQ0ITMglbQiGz8nLCa9r3ATumQlpv5dPJkcHi0ENPVUxBEjP3TgHvHyk7RwIehYpuDZ82r2wu9xk39hBizXSe7e8J1UMAfIZZ5Spx2uyywtDtxKnIgWXttPIr0sJZLSkT8WkEuMgXopvHBA31xv3RgdlYpdyOZVwIMDwq4pyAY6uKMF42Kv61tHlcSAm5HrjlUvuI1Yu+d7nlJ5eOM/sYvRcWi9uJaLkqk36u2OqVKnUP6dfMiEkhhhIbP4AAAAASUVORK5CYII=" alt="delivery--v1">
+                  <div class=" flex-col">
+                    <h1 class=" text-sm  text-gray-400 font-bold">PENDING ORDERS</h1>
+                    <p class="font-bold text-lg">250</p>
+                  </div>
+  </div>
+  </div>
+</div>
+    <!---Sales Chart & Traffic Source-->
+
+      <!---Recent order -table-->
+<div class="p-1 m-2 bg-white rounded-xl shadow-sm overflow-hidden">
+
+  <div class="flex justify-between items-center ">
+    <h1 class=" pl-2 font-semibold text-base">RECENT ORDER</h1>
+    <a href="" class="text-blue-800  pr-3 font-bold text-base hover:text-gray-500">View More</a>
+  </div>
+
+  <div class="overflow-x-auto">
+ <table class="w-full min-w-[600px] text-left">
+  <thead class="bg-white border-b-2 border-gray-200 ">
+    <tr>
+      <th class=" font-semibold text-sm tracking-wider text-left text-gray-400 pl-2" >OREDER ID</th>
+      <th class=" font-semibold text-sm tracking-wider text-left text-gray-400" >CUSTOMER</th>
+      <th class=" font-semibold text-sm tracking-wider text-left text-gray-400 " >PRODUCT</th>
+      <th class=" font-semibold text-sm tracking-wider text-left text-gray-400 " >DATES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="bg-white">
+      <td class=" text-sm text-gray-700 " >#12345</td>
+      <td class="p-2 text-sm text-gray-700 flex items-center gap-2" >
+        <img src="profile 1.jpeg" alt="" class="w-8 h-8 object-cover rounded-full"> 
+        <p>David</p>  
+      </td>
+      <td class=" text-sm text-gray-700" >Pants</td>
+      <td class="text-sm text-gray-700" >2024-01-01</td>
+    </tr>
+    <tr class="bg-gray-50">
+      <td class=" text-sm text-gray-700" >#15645</td>
+      <td class="p-1 text-sm text-gray-700 flex items-center gap-2" >
+        <img src="profile pic.jpeg" alt="" class="w-8  rounded-lg"> 
+        <p>Ziya</p>
+      </td>
+      <td class="text-sm text-gray-700" >Cups</td>
+      <td class="text-sm text-gray-700" >2024-01-01</td>
+    </tr>
+    <tr class="bg-white">
+      <td class="text-sm text-gray-700" >#2323</td>
+      <td class="p-1 text-sm text-gray-700 flex items-center gap-2" >
+        <img src="profile img.jpeg" alt="" class="w-8 h-6 rounded-lg"> 
+        <p>Sara</p>
+      </td>
+      <td class="text-sm text-gray-700" >T-shirt</td>
+      <td class="text-sm text-gray-700" >2024-01-01</td>
+    </tr>
+  </tbody>
+ </table>
+ </div>
+</div>
+   <!--Product List-->
+<div class="flex flex-wrap gap-4 p-4 ">
+
+<div class="w-full md:w-[calc(50%-1rem)] lg:flex-1 bg-white m-2 p-2 rounded-xl shadow-sm">
+ 
+  <div class="h-40 w-full overflow-hidden rounded-xl relative">
+       <img src="Pants.jpeg" class="w-full h-full object-cover">
+       <span class="absolute top-2 right-2 text-xs px-2 py-1 rounded-full bg-yellow-100 text-yellow-700 font-medium">
+        OUT STOCK
+       </span>
+    </div>
+  <h1 class="font-semibold">PANTS</h1>
+   <h3 class="text-blue-600 font-bold">1000.00$</h3>
+   <button class="bg-black text-white w-full  rounded-lg">
+    <a href="" class="">Edit details</a>
+  </button>
+  </div>
+
+<div class="w-full md:w-[calc(50%-1rem)] lg:flex-1 bg-white m-2 p-2 rounded-xl shadow-sm">
+  <div class="h-40 w-full overflow-hidden rounded-xl relative">
+       <img src="cupp.jpeg" class="w-full h-full object-cover">
+       <span class="absolute top-2 right-2 text-xs px-2 py-1 rounded-full bg-yellow-100 text-yellow-700 font-medium">
+        IN STOCK
+       </span>
+    </div>
+  <h1 class="font-semibold">CUPS</h1>
+   <h3 class="text-blue-600 font-bold">250.00$</h3>
+   <button class="bg-black text-white w-full  rounded-lg">
+    <a href="" class="">Edit details</a>
+  </button>
+  </div>
+
+  <div class="w-full md:w-[calc(50%-1rem)] lg:flex-1 bg-white m-2 p-2  rounded-xl shadow-sm">
+   <div class="h-40 w-full overflow-hidden rounded-xl relative">
+       <img src="tshort.jpeg" class="w-full h-full object-cover">
+       <span class="absolute top-2 right-2 text-xs px-2 py-1 rounded-full bg-yellow-100 text-yellow-700 font-medium">
+        LOW STOCK
+       </span>
+    </div>
+  <h1 class="font-semibold">T-SHIRTS</h1>
+   <h3 class="text-blue-600 font-bold">1500.00$</h3>
+   <button class="bg-black text-white w-full  rounded-lg hover:bg-slate-900 transition">
+    <a href="" class="">Edit details</a>
+  </button>
+
+  </div>
+</div>
+
+<footer class="bg-white w-full text-center p-2 mt-1 rounded-md shadow-sm shadow-gray-300 ">
+ <p>“Built with Tailwind CSS – SHE'S CORNER”</p>
+</footer>
+
+</main>
+       
+
+</body>
+</html>
